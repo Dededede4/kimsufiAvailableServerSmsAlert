@@ -32,7 +32,7 @@ function onServerAvailable(zones){
 	freeWs.path += msg;
 	https.get(freeWs, function(res) {
 		if (res.statusCode != 200){
-			console.log('Free fail with statusCode '+statusCode);
+			console.log('Free fail with statusCode '+res.statusCode);
 		}
 	});
 
