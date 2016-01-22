@@ -47,8 +47,8 @@ function onOvhResponse(data)
 		var availability = availabilities[i];
 		var availabileZones = [];
 		if (availability.reference === product){
-			for(var i= 0; i < availability.zones.length; i++){
-				var metazone = availability.zones[i];
+			for(var j= 0; j < availability.zones.length; j++){
+				var metazone = availability.zones[j];
 				if (metazone.availability != 'unavailable' && metazone.availability != 'unknown'){
 					availabileZones.push(metazone.zone);
 				}
